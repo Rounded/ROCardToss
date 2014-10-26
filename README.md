@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 
 ## Author
 
-Brian Weinreich, be.weinreich@gmail.com
+Brian Weinreich at Rounded bw@roundedco.com
 
 ## License
 

@@ -1,0 +1,14 @@
+PODS:
+  - ROCardToss (0.1.0)
+
+DEPENDENCIES:
+  - ROCardToss (from `../`)
+
+EXTERNAL SOURCES:
+  ROCardToss:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ROCardToss: d5fcd7d9f6f47614d7697693463e5d11daa3916f
+
+COCOAPODS: 0.34.4

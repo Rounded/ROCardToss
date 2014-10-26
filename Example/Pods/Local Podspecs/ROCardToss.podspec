@@ -10,16 +10,19 @@
 Pod::Spec.new do |s|
   s.name             = "ROCardToss"
   s.version          = "0.1.0"
-  s.summary          = "Generates a card popup that you can toss to dismiss."
+  s.summary          = "A short description of ROCardToss."
   s.description      = <<-DESC
-                       The Card Toss is part of the Rounded UI Framework. It allows you to easily generate a card popup, with a smooth bouncy transition, and a quick toss-to-dismiss motion when finished with the view. Delegates are setup to be notified when the card was tossed or the X button was clicked. Add any subviews you'd like to the Card Toss.
+                       An optional longer description of ROCardToss
+
+                       * Markdown format.
+                       * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/Rounded/ROCardToss"
+  s.homepage         = "https://github.com/<GITHUB_USERNAME>/ROCardToss"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Brian Weinreich" => "bw@roundedco.com" }
-  s.source           = { :git => "https://github.com/Rounded/ROCardToss.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/roundedco'
+  s.author           = { "Brian Weinreich" => "be.weinreich@gmail.com" }
+  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/ROCardToss.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
