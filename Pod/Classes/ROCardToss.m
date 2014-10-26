@@ -143,7 +143,7 @@
 {
     if (!_closeButton) {
         _closeButton = [[UIButton alloc] initForAutoLayout];
-        [_closeButton setImage:[UIImage imageNamed:@"close"] forState:UIControlStateNormal];
+        [_closeButton setImage:[UIImage imageNamed:@"ROCardToss.bundle/close"] forState:UIControlStateNormal];
         [_closeButton addTarget:self action:@selector(hide) forControlEvents:UIControlEventTouchUpInside];
     }
     

@@ -7,6 +7,10 @@
 
 ROCardToss is part of the *Rounded UI Kit framework*. Other notable pieces of the framework are the ROFilter and ROTranslucentView.
 
+## To do
+
+* Add credit for PureLayout, Pop
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
