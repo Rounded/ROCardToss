@@ -1,5 +1,9 @@
 PODS:
-  - ROCardToss (0.1.0)
+  - pop (1.0.7)
+  - PureLayout (2.0.1)
+  - ROCardToss (0.1.0):
+    - pop
+    - PureLayout
 
 DEPENDENCIES:
   - ROCardToss (from `../`)
@@ -9,6 +13,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ROCardToss: d5fcd7d9f6f47614d7697693463e5d11daa3916f
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
+  PureLayout: 12eca5b6dc94f1a03fdf255d640604584ff1b55b
+  ROCardToss: af0b0e261543b85f9cd2000754520e40a4c21ac6
 
 COCOAPODS: 0.34.4

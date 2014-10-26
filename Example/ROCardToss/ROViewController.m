@@ -7,8 +7,12 @@
 //
 
 #import "ROViewController.h"
+#import <ROCardToss.h>
 
-@interface ROViewController ()
+@interface ROViewController () <ROCardTossDelegate>
+
+@property (strong, nonatomic) UIButton *launchCardButton;
+@property (strong,nonatomic) ROCardToss *cardToss;
 
 @end
 
@@ -17,13 +21,49 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [self.view addSubview:self.launchCardButton];
 }
 
-- (void)didReceiveMemoryWarning
+# pragma mark - Actions
+
+- (void)launchCard
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.cardToss show];
+}
+
+# pragma mark - Delegates
+
+- (void)cardWasDismissed
+{
+    NSLog(@"Card was dismissed");
+}
+
+# pragma mark - Getters
+
+- (ROCardToss *)cardToss
+{
+    if (!_cardToss) {
+        _cardToss = [ROCardToss new];
+        _cardToss.delegate = self;
+    }
+    
+    return _cardToss;
+}
+
+- (UIButton *)launchCardButton
+{
+    if (!_launchCardButton) {
+        _launchCardButton = [[UIButton alloc] initWithFrame:CGRectMake(15, (self.view.frame.size.height/2)-22, self.view.frame.size.width-30, 44)];
+        _launchCardButton.backgroundColor = [UIColor colorWithRed:0.15 green:0.73 blue:0.52 alpha:1];
+        _launchCardButton.layer.cornerRadius = 9;
+        _launchCardButton.layer.masksToBounds = YES;
+        [_launchCardButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [_launchCardButton setTitle:@"Launch Card" forState:UIControlStateNormal];
+        [_launchCardButton addTarget:self action:@selector(launchCard) forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return _launchCardButton;
 }
 
 @end
