@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/ROCardToss.svg?style=flat)](http://cocoadocs.org/docsets/ROCardToss)
 [![Platform](https://img.shields.io/cocoapods/p/ROCardToss.svg?style=flat)](http://cocoadocs.org/docsets/ROCardToss)
 
+ROCardToss is part of the *Rounded UI Kit framework*. Other notable pieces of the framework are the ROFilter and ROTranslucentView.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
