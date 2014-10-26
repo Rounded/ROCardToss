@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ROCardToss"
-  s.version          = "1.0.2"
+  s.version          = "1.0.3"
   s.summary          = "Generates a card popup that you can toss to dismiss."
   s.description      = <<-DESC
                        The Card Toss is part of the Rounded UI Framework. It allows you to easily generate a card popup, with a smooth bouncy transition, and a quick toss-to-dismiss motion when finished with the view. Delegates are setup to be notified when the card was tossed or the X button was clicked. Add any subviews you'd like to the Card Toss.
